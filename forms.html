@@ -5,16 +5,11 @@
   <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- адаптивность под разные устройства -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-  <style type="text/css">
-    .left {
-      float: left;
-      margin: 5px 5px 5px 5px;
-    }
-    .forms {
-        width: 350px; background-color: #999999; color: black ;    
-         margin: 0 auto; padding: 15px;
-      }
-  </style>
+ <style type="text/css">
+   .forms {
+    background: #DCDCDC;
+   }
+ </style>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -66,38 +61,25 @@
           <h3 style="color: black; text-align: center;">Записаться на съёмку</h3>
           <h6 style="text-align: center" >Уважаемые посетители сайта, для того чтобы записаться на съёмку, пожалуйста, заполнените форму ниже. После чего с вами в скором времени свяжется менеджер.</h6>
           <main class="forms">
-      <form method="GET" id="search">
-    <p>
-    <label for="name"> ФИО </label>
-      <input type="text" name="FIO" id="name">
-    </p>
-    <p> 
-    <label> Контактный телефон </label>
-      <input type="text" name="Phone">
-    </p>
-    <p>
-      <label> Ваш Email/instagram </label>
-      <input type="text" name="email">
-    </p>
-    <p> 
-    <label> Предварительный желаемый день съёмки</label>
-    <input type="date" name="date" id="date">
-    </p>
-    <p>
-    <label for="course">Количество часов на съёмку</label>
-      <select>
-      <option>1</option>
-      <option>2</option>
-      <option>3</option>
-      <option>Больше 4</option>
-     </select></p>
-     <p>
-      <label>Тип съёмки</label>
-      <input type="text" name="name">
-    </p>
-    <label for="about" class="ser">Ваши пожелания</label> <textarea rows="4" cols="40" placeholder="Ваши пожелания" id="about"></textarea>
-     <button type="submil">Отправить</button>
- </form>
+      <form>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Ваше имя</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email, instagram, vk</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Тип съёмки</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Удобная дата для съёмки</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+  <button type="submit" class="btn btn-secondary">Отправить</button>
+</form>
 </main>
 </div>
 </div>
