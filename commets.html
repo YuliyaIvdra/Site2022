@@ -6,14 +6,9 @@
    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- адаптивность под разные устройства -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <style type="text/css">
-    .left {
-      float: left;
-      margin: 5px 5px 5px 5px;
-    }
-    .forms {
-        width: 350px; background-color: #999999; color: black ;    
-         margin: 0 auto; padding: 15px;
-      }
+   .forms {
+    background: #DCDCDC;
+   }
   </style>
 </head>
 <body>
@@ -35,10 +30,9 @@
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Каталог</a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Женщинам</a></li>
-            <li><a class="dropdown-item" href="#">Мужчинам</a></li>
+            <li><a class="dropdown-item" href="catalog.html">Услуги</a></li>
+            <li><a class="dropdown-item" href="#">Акции</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Детям</a></li>
           </ul>
         </li>
     </ul>
@@ -66,14 +60,17 @@
           <h3 style="color: black; text-align: center;">Оставте свой комментарий</h3>
           <h6 style="text-align: center" >Мне очень важна обратная связь, буду рад Вашим комментариям.</h6>
           <main class="forms">
-      <form method="GET" id="search">
-    <p>
-    <label for="name">Ваше имя(при желании)</label>
-      <input type="text" name="FIO" id="name">
-    </p>
-    <label for="about" class="ser">Ваш комментарий, предложения, что угодно</label> <textarea rows="4" cols="40" placeholder="Ваш комментарий" id="about"></textarea>
-     <button type="submil">Отправить</button>
- </form>
+      <form>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Ваше имя</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Ваш комментарий, предложение или что-либо ещё</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+  <button type="submit" class="btn btn-secondary">Отправить</button>
+</form>
 </main>
 </div>
 </div>
