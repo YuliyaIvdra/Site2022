@@ -1,0 +1,24 @@
+ .left {
+      float: left;
+      margin: 5px 5px 5px 5px;
+    }
+ .galer img {
+  width: 23%;
+  height: auto;
+  border:3px solid;
+    display: inline-block;
+    float:left;
+    margin:2px;
+    transition: 0.5s;
+    margin-left: 5px;
+     }
+ .galer img:hover {
+  transform: scale(1.5);}
+  
+ .forms {
+    background: #DCDCDC;
+   }
+   .informImg {
+      float: center;
+      margin: 5px 5px 5px 5px;
+    }
